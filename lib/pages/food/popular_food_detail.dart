@@ -4,6 +4,7 @@ import 'package:food_delivery/utils/dimensions.dart';
 import 'package:food_delivery/widgets/app_food_rating_column.dart';
 import 'package:food_delivery/widgets/app_icon.dart';
 import 'package:food_delivery/widgets/big_text.dart';
+import 'package:food_delivery/widgets/expandable_text_widget.dart';
 import 'package:food_delivery/widgets/icon_and_text_widget.dart';
 
 class PopularFoodDetail extends StatelessWidget {
@@ -69,7 +70,17 @@ class PopularFoodDetail extends StatelessWidget {
                     SizedBox(
                       height: Dimensions.height20,
                     ),
-                    BigText(text: "Introduce")
+                    BigText(text: "Introduce"),
+                    SizedBox(
+                      height: Dimensions.height20,
+                    ),
+                    Expanded(
+                      child: SingleChildScrollView(
+                        child: ExpandableTextWidget(
+                            text:
+                                "Vipul is doing something he never do in his life. He thinks that one day he has it all, whatever he thinks  blah blah. One Day he gonna prove himself to his parent,Vipul is doing something he never do in his life. He thinks that one day he has it all, whatever he thinks  blah blah. One Day he gonna prove himself to his parents,Vipul is doing something he never do in his life. He thinks that one day he has it all, whatever he thinks  blah blah. One Day he gonna prove himself to his parents one day he has it all, whatever he thinks  blah blah. One Day he gonna prove himself to his parent,Vipul is doing something he never do in his life. He thinks that one day he has it all, whatever he thinks  blah blah. One Day he gonna prove himself to his parents,Vipul is doing something he never do in his life. He thinks that one day he has it all, whatever he thinks  blah blah. One Day he gonna prove himself to his parents"),
+                      ),
+                    ),
                   ],
                 ),
               )),

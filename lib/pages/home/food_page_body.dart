@@ -41,6 +41,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
     return Column(children: [
       //slider block
       Container(
+        margin: EdgeInsets.only(top: Dimensions.height45, bottom: Dimensions.height15),
+        padding: EdgeInsets.only(left: Dimensions.width20, right: Dimensions.width20),
         //color: Colors.redAccent,
         height: Dimensions.pageView,
         child: PageView.builder(
